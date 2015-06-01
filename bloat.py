@@ -243,7 +243,7 @@ def treeify_syms(symbols, strip_prefix=None, cppfilt=None):
                 path = path[1:]
             path = ['[path]'] + path.split('/')
 
-        if sym.startswith('literal string: '):
+        if sym.startswith('literal string:'):
           parts = sym.split(':', 1)
           parts[1] = repr(parts[1])
         else:
